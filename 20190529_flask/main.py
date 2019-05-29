@@ -10,6 +10,7 @@ cnt = 0
 price = 0
 history = ''
 
+
 @app.route('/')
 def index():
     # render_template 함수가  templates 폴더안의 소스를 가져온다.

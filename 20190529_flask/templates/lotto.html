@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ordr}}회차 Lotto 당첨여부 확인</title>
+</head>
+<body>
+<h1>{{ordr}}회차</h1>
+<h2>{{result}}</h2>
+<h2>총 사용금액: {{price}}원</h2>
+<!--<h2>당첨금 누계: {{earning}}</h2>-->
+<table>
+    <tr>
+        {% for i in [1,2,3,4,5,6] %}
+        <th>{{i}}번</th>
+        {% endfor %}
+        <th>bonus</th>
+    </tr>
+    <tr>
+        {% for i in lotto_numbers %}
+        <td>{{i}}</td>
+        {% endfor %}
+        <th>{{bonus}}</th>
+    </tr>
+    <tr>
+        {% for i in my_numbers %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+</table>
+<h3>1등 당첨횟수: {{num1}}</h3>
+<h3>2등 당첨횟수: {{num2}}</h3>
+<h3>3등 당첨횟수: {{num3}}</h3>
+<h3>4등 당첨횟수: {{num4}}</h3>
+<h3>5등 당첨횟수: {{num5}}</h3>
+<article>
+    <h3>{{history}}</h3>
+</article>
+</body>
+</html>
