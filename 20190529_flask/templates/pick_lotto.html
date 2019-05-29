@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회차별 Lotto Numbers</title>
+</head>
+<body>
+<h1>{{ordr}}회차 로또번호</h1>
+{% if numbers %}
+<ol>
+    {% for num in numbers %}
+    <li>{{num}}</li>
+    {% endfor %}
+</ol>
+{% else %}
+    <h2>해당 회차는 검색이 되지 않습니다.</h2>
+{% endif %}
+</body>
+</html>
