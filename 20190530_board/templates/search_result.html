@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<div>
+    <h1>Result Page</h1>
+    <!--<h2>{{errFlag}}</h2>-->
+    {% if not errFlag %}
+        <p>
+        <h2>종목: {{companyName}}</h2>
+        <h2>가격: ${{latestPrice}}</h2>
+        </p>
+    {% else %}
+        <p>해당 주식 정보를 검색할 수 없습니다.</p>
+    {% endif %}
+</div>
+</body>
+</html>
