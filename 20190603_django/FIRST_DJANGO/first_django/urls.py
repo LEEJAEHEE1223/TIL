@@ -27,7 +27,8 @@ urlpatterns = [
     # path('home/', home_views.index),
     # path('home/contact/', home_views.contact),
     # path('home/help_me/', home_views.help_me),
-    path('', include('home.urls'))
+    path('', include('home.urls')),
+    path('utils/', include('utils.urls')),
 ]
 
 
